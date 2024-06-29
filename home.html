@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Streaming Service</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { font-family: Arial, sans-serif; }
+  .navbar {  margin-right: 30px; align-items: left ; justify-content: space-evenly; position:fixed; width: 100%; left: 0% ; top:0; z-index: 100; display: flex; justify-content: space-between; background-color: #7badd6; padding: 5px; }
+  .navbar a { color: rgb(176, 70, 70); text-decoration: none; padding: 10px; }
+  .navbar a:hover { background-color: #c6a821; color: black; }
+  .content { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px; }
+  .movie { width: 500px; height: 500px margin = 10px; text-align: center; }
+  .movie img { width: 100%; }
+  .footer { text-align: left; padding: 20px; background-color: #333; color: rgb(199, 131, 131); }
+  .search {  width: 500px; height: 500px margin = 10px; text-align: center; }
+</style>
+</head>
+<body style="background-color: bisque;">
+
+
+<div class="navbar">
+  <a href="home.html" TARGET="_blank">Home</a>
+  <a href="movies.html" TARGET="_blank">Movies</a>
+  <a href="tv.html" TARGET="_blank">Series</a>
+  <a href="gallary.html" TARGET="_blank">Gallery</a>
+  <a href="contact.html" TARGET="_blank">Contact</a>
+  <a href="about.html" TARGET="_blank">About us</a>
+</div>
+
+<br><br> 
+
+<div class="content">
+  <!-- Repeat this block for each movie -->
+  <div class="movie">
+    <img src="logo2.jpg" alt="Movie House logo">
+    <h1>MOVIE HOUSE</h1>
+
+    </div>
+</div>
+
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="g.jpeg" alt="Image #1">
+            <img class="slide" src="a.jpeg" alt="Image #1">
+            <img class="slide" src="b.jpeg" alt="Image #1">
+            <img class="slide" src="e.png" alt="Image #1">
+            <img class="slide" src="h.jpg" alt="Image #2">
+            <img class="slide" src="k.jpg" alt="Image #3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+
+  
+
+
+    <script src="index.js"></script>
+
+    
+
+    <footer >
+        <div class="footer" style="background-color:rgb(42, 40, 40); color: navajowhite;">
+           
+                <div class="box">
+            <div class="items">
+                <h1>Contact Us</h1><br>
+                <h3>Phone number: +977 9823577522</h3>
+                <h3>Email address: moviehouse@20.com</h3>
+                <h3>Address: Kathmandu, Nepal</h3>
+                    </div>
+                    <div class="m">
+                        <h1>More</h1>
+                        <ul class="middle">
+                            <li><a href="home.html" >Home </a></li>
+                            <li><a href="movies.html">Movies</a></li>
+                            <li><a href="tv.html">TV Shows </a></li>
+                            <li><a href="gallary.html" >Gallery</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="last">
+                        <h1>Follow Us</h1>
+                        <!-- <ul class="social-links">
+                            <li><a href="https://www.facebook.com/Hublot/"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
